@@ -13,4 +13,4 @@ jobs:
     steps: 
       - uses: actions/checkout@v3
       - name: Build the Docker image        
-        run: docker build . --file Dockerfile --tag my-app-by-docker:$(date +%s)
+        run: docker build . --tag my-app-by-docker:$(date +%s)
