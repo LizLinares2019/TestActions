@@ -11,6 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps: 
-      - uses: actions/demo-test-actions@v2
+      - uses: actions/demo-test-actions
       - name: Build the Docker image        
         run: docker build . --tag my-app-by-docker:$(date +%s)
