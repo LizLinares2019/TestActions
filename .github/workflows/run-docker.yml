@@ -9,7 +9,9 @@ on:
 jobs:
   build-container:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    container:
+     image: node
+        
     steps: 
       - uses: actions/checkout@v1
       - name: Build the Docker image        
